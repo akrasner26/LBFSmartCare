@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      SignupPage
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding style="background:url(./assets/img/glDtwZPqSza7LccRvAbA_taskchoicebackground.png) no-repeat center;background-size:cover;" id="page2">
+  <img src="assets/img/HIuInkGhRZegMtbqSqJA_logo.png" style="display:block;width:80%;height:auto;margin-left:auto;margin-right:auto;" />
+  <form id="signupPage-form2">
+    <h3 id="signupPage-heading4" style="color:#FFFFFF;">
+      Sign up.
+    </h3>
+    <ion-list id="signupPage-list1">
+      <ion-item id="signupPage-Name">
+        <ion-label floating>
+          Name
+        </ion-label>
+        <ion-input type="text" placeholder=""></ion-input>
+      </ion-item>
+      <ion-item id="signupPage-Email">
+        <ion-label floating>
+          Email
+        </ion-label>
+        <ion-input type="email" [(ngModel)]="user.email" [ngModelOptions]="{standalone: true}"></ion-input>
+      </ion-item>
+      <ion-item id="signupPage-input6">
+        <ion-label floating>
+          Password
+        </ion-label>
+        <ion-input type="password" [(ngModel)]="user.password" [ngModelOptions]="{standalone: true}"></ion-input>
+      </ion-item>
+      <ion-item id="signupPage-input7">
+        <ion-label floating>
+          Repeat Password
+        </ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-item id="signupPage-input8">
+      <ion-label floating>
+        Phone Number
+      </ion-label>
+      <ion-input type="tel"></ion-input>
+    </ion-item>
+    <ion-item id="signupPage-input9">
+      <ion-label floating>
+        Company Name
+      </ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <button id="signupPage-button3" ion-button color="light" block style="color:#00C1C2;" on-click="goToProfilePage(user)">
+      <ion-icon name="arrow-round-forward"></ion-icon>
+    </button>
+  </form>
+  <div id="signupPage-markdown11" class="show-list-numbers-and-dots">
+    <p style="color:#FFFFFF;">
+      Already have an account?
+      <strong>
+        Sign in
+      </strong>
+    </p>
+  </div>
+  <button id="signupPage-button13" ion-button clear color="light" block large icon-right style="color:#00C1C2;" on-click="goToWelcomePage()">
+    <ion-icon name="person"></ion-icon>
+  </button>
+</ion-content>
